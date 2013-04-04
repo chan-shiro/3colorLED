@@ -17,6 +17,8 @@ void setup(){
 }
 
 void updateBrightness(){
+  // Update output along with sin function
+  // initial angle: red = 0, green = 2/3*PI, blue = 4/3*PI
   red = sin(2 * 3.14 / 256 * i) * 128 + 128; 
   green = sin(2 * 3.14 / 256 * (i + 85)) * 128 + 128; 
   blue = sin(2 * 3.14 / 256 * (i + 170)) * 128 + 128; 
